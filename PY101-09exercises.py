@@ -1,3 +1,4 @@
+# Easy 1
 # def isnt_it_odd(value):
 #     return abs(value) % 2 != 0
 
@@ -99,3 +100,45 @@
 # print(is_leap_year(2023) == False)
 # print(is_leap_year(2024) == True)
 # print(is_leap_year(2025) == False)
+
+# def multisum(number):
+#     sum = 0
+#     for i in range(1, number + 1):
+#         if i % 3 == 0 or i % 5 == 0:
+#             sum += i
+#     return sum
+
+# print(multisum(3) == 3)
+# print(multisum(5) == 8)
+# print(multisum(10) == 33)
+# print(multisum(1000) == 234168)
+
+# def utf16_value(string):
+#     sum = 0
+#     for char in string:
+#         sum += ord(char)
+
+#     return sum
+
+# print(utf16_value('Four score') == 984)
+# print(utf16_value('Launch School') == 1251)
+# print(utf16_value('a') == 97)
+# print(utf16_value('') == 0)
+
+# ----------------------------------------Easy 2---------------------------------------- #
+
+# def greetings(name, job):
+#     return(f"Hello, {' '.join(name)}! Nice to have a "
+#            f"{job['title']} {job['occupation']}"
+#            " around.")
+
+# greeting = greetings(
+#     ["John", "Q", "Doe"],
+#     {"title": "Master", "occupation": "Plumber"},
+# )
+# print(greeting)
+def greet():
+    greeter = input("What is your name? ")
+    if greeter[len(greeter) -1] == "!":
+        return (f"HELLO {greeter}! WHY ARE WE YELLING?")
+    return f"Hello {greeter}"
